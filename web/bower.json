@@ -1,0 +1,19 @@
+{
+  "name": "tangerine-testing",
+  "version": "1.0.0",
+  "authors": [
+    "rodrigo <rodrigo.riquelme@gamelena.com>"
+  ],
+  "description": "Tangerine Testing",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "editor-diagrama": "git@104.154.50.246:ussd/editor-diagrama.git#master"
+  }
+}

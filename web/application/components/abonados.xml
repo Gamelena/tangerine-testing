@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<component name="Abonados" type="dojo-simple-crud"
+	target="DbTable_TestingAbonados" list="true" delete="true" edit="true" add="true"
+	clone="true" serverPagination="true"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="components.xsd">
+	<elements>
+		<element name="MSISDN" target="msisdn" type="dijit-form-validation-text-box"
+			visible="true" edit="true" add="true" clone="true" maxlength="11" regExp="[\d]{11}" required="true"></element>
+		<element name="Lista" target="list" type="dijit-form-validation-text-box"
+			visible="true" edit="true" add="true" clone="true" regExp="[\d]+" maxlength="2" required="true"></element>
+	</elements>
+	<forms ajax="true"></forms>
+	<helpers>
+		<excel name="Descargar CSV" formatter="csv" iconClass="zweiIconDownload" />
+		<uploader name="Carga Masiva CSV" action="load" iconClass="zweiIconUpload" />
+		<uploader name="Inserción Masiva" action="insert" iconClass="zweiIconUpload"/>
+		<uploader name="Borrado e Inserción Masiva" action="insert" truncate="true" iconClass="zweiIconUpload"/>
+		<uploader name="Eliminación Masiva" action="delete" iconClass="zweiIconUpload"/>
+	</helpers>
+	<searchers>
+		<element target="msisdn" required="false"></element>
+	</searchers>
+</component>

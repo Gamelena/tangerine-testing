@@ -1,0 +1,16 @@
+vendor/
+tests/ci/
+log/
+.buildpath
+.project
+.idea/
+.settings/
+composer.lock
+*.iml
+web/cache/*
+web/log/*
+web/tests/ci/*
+web/tests/logs/*
+web/tests/pdepend/*
+
+

@@ -1,0 +1,21 @@
+{
+	"name": "gamelena/tangerine-testing",
+	"description": "Tangerine Testing",
+	"license": "GPL 2",
+	"authors": [
+		{
+			"name": "rodrigo",
+			"email": "rodrigo.riquelme.e@gmail.com"
+		}
+	],
+	"repositories": [
+		{
+			"type": "git",
+			"url": "https://github.com/gamelena/tangerine.git"
+		}
+	],
+	"require-dev": {
+		"gamelena/tangerine": "master"
+	},
+	"minimum-stability": "dev"
+}

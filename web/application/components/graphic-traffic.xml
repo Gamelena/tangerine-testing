@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<component name="M&amp;oacute;dulos" type="dojo-simple-crud"
+	target="TestingTraficoModel" list="true" delete="true" edit="true" add="true"
+	clone="true" serverPagination="true"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="components.xsd">
+	<script>
+		dojo.require('admtesting.trafficChart')
+		var trafficChart = new admtesting.trafficChart();
+	</script>
+	<elements>
+		<element name="Id" target="id" type="dijit-form-validation-text-box"></element>
+		<element name="Usuario" target="usuario" type="dijit-form-validation-text-box"></element>
+		<element name="M&amp;oacute;dulo" target="modulo" type="dijit-form-validation-text-box"></element>
+		<element name="Operaci&amp;oacute;n" target="operacion" type="dijit-form-validation-text-box"></element>
+		<element name="Estado" target="estado" type="dijit-form-validation-text-box"></element>
+		<element name="Fecha" target="fecha" required="true" type="dijit-form-date-text-box"></element>
+	</elements>
+	<forms ajax="true"></forms>
+	<searchers outsideContent="true">
+		<element name="Desde" target="fecha" operator="&amp;gt;=" sufix=" 00:00:00"></element>
+		<element name="Hasta" target="fecha" operator="&amp;lt;=" sufix=" 23:59:59"></element>
+		<onSubmit>
+			trafficChart.show(this.get('value'));
+		</onSubmit>
+	</searchers>
+</component>

@@ -1,0 +1,21 @@
+{
+  "name": "tangerine-testing",
+  "version": "1.0.0",
+  "description": "Tangerine Testing",
+  "main": "public/index.php",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test" : "phpunit",
+    "build" : "ant ..",
+    "postinstall" : "mkdir -p bower_components/d3 && mkdir -p bower_components/nvd3 && cp -r node_modules/d3/* bower_components/d3/ && cp -r node_modules/nvd3/* bower_components/nvd3/"
+  },
+  "author": "rodrigo.riquelme@gamelena.com",
+  "license": "Zweicom",
+  "dependencies": {
+    "d3": "^3.5.10",
+    "nvd3": "^1.8.1"
+  }
+}
