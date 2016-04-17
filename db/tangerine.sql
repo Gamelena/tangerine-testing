@@ -3,18 +3,22 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 11-11-2015 a las 17:40:06
--- Versión del servidor: 5.5.46-0ubuntu0.14.04.2
+-- Tiempo de generación: 17-04-2016 a las 16:50:38
+-- Versión del servidor: 5.5.47-0ubuntu0.14.04.1
 -- Versión de PHP: 5.5.9-1ubuntu4.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
 
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
 --
 -- Base de datos: `tangerine_testing`
 --
-CREATE DATABASE IF NOT EXISTS `tangerine_testing` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `tangerine_testing`;
 
 -- --------------------------------------------------------
 
@@ -299,15 +303,16 @@ CREATE TABLE IF NOT EXISTS `acl_session` (
 INSERT INTO `acl_session` (`id`, `acl_users_id`, `acl_roles_id`, `created`, `modified`, `lifetime`, `image`, `data`, `ip`, `user_agent`, `must_refresh`) VALUES
 ('0bjcpplget4nvee4qfqbm9kbe6', 1, 1, 1426192419, 1426192420, 864000, NULL, 'Zend_Auth|a:3:{s:7:"timeout";i:1426194820;s:10:"requestUri";s:6:"/admin";s:7:"storage";O:8:"stdClass":11:{s:2:"id";s:1:"1";s:12:"acl_roles_id";s:1:"1";s:9:"user_name";s:7:"gamelena";s:11:"first_names";s:7:"Soporte";s:10:"last_names";s:7:"Zweicom";s:5:"email";s:20:"tecnicos@gamelena.com";s:8:"approved";s:1:"1";s:4:"foto";N;s:12:"must_refresh";s:1:"0";s:16:"sessionNamespace";s:17:"tangerine-testing";s:6:"groups";a:0:{}}}', '127.0.0.1', 'Opera/9.80 (X11; Linux x86_64) Presto/2.12.388 Version/12.16', '0'),
 ('1914b1cfhc6qh3lartgvedbb62', 1, 1, 1426510232, 1426523054, 864000, NULL, 'Zend_Auth|a:3:{s:7:"timeout";i:1426525453;s:10:"requestUri";s:12:"/admin/login";s:7:"storage";N;}', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36 FirePHP/4Chrome', '1'),
-('51v7jq3klfili445sa08ngmkm3', 1, 1, 1447255537, 1447256625, 864000, NULL, 'Zend_Auth|a:3:{s:7:"timeout";i:1447258760;s:10:"requestUri";s:161:"/crud-request?model=DbTable_TestingAbonados&&format=json&search[msisdn][value]=&search[msisdn][format]=&search[msisdn][operator]=&p=abonados.xml&start=0&count=25";s:7:"storage";O:8:"stdClass":11:{s:2:"id";s:1:"1";s:12:"acl_roles_id";s:1:"1";s:9:"user_name";s:7:"gamelena";s:11:"first_names";s:7:"Soporte";s:10:"last_names";s:7:"Zweicom";s:5:"email";s:20:"tecnicos@gamelena.com";s:8:"approved";s:1:"1";s:4:"foto";N;s:12:"must_refresh";s:1:"0";s:16:"sessionNamespace";s:17:"tangerine-testing";s:6:"groups";a:0:{}}}', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 FirePHP/4Chrome', '0'),
+('51v7jq3klfili445sa08ngmkm3', 1, 1, 1447255537, 1447256625, 864000, NULL, 'Zend_Auth|a:3:{s:7:"timeout";i:1447258760;s:10:"requestUri";s:161:"/crud-request?model=DbTable_TestingAbonados&&format=json&search[msisdn][value]=&search[msisdn][format]=&search[msisdn][operator]=&p=abonados.xml&start=0&count=25";s:7:"storage";O:8:"stdClass":11:{s:2:"id";s:1:"1";s:12:"acl_roles_id";s:1:"1";s:9:"user_name";s:7:"gamelena";s:11:"first_names";s:7:"Soporte";s:10:"last_names";s:7:"Zweicom";s:5:"email";s:20:"tecnicos@gamelena.com";s:8:"approved";s:1:"1";s:4:"foto";N;s:12:"must_refresh";s:1:"0";s:16:"sessionNamespace";s:17:"tangerine-testing";s:6:"groups";a:0:{}}}', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36 FirePHP/4Chrome', '1'),
+('6j84mjs32gkrjdmf3gnlea8cp0', 1, 1, 1460922606, 1460922636, 864000, NULL, 'Zend_Auth|a:3:{s:7:"timeout";i:1460925005;s:10:"requestUri";s:72:"/components/dojo-simple-crud/edit?p=users.xml&&primary[id]=2&p=users.xml";s:7:"storage";O:8:"stdClass":11:{s:2:"id";s:1:"1";s:12:"acl_roles_id";s:1:"1";s:9:"user_name";s:8:"gamelena";s:11:"first_names";s:7:"Soporte";s:10:"last_names";s:7:"Zweicom";s:5:"email";s:21:"tecnicos@gamelena.com";s:8:"approved";s:1:"1";s:4:"foto";N;s:12:"must_refresh";s:1:"0";s:16:"sessionNamespace";s:17:"tangerine-testing";s:6:"groups";a:0:{}}}', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36', '1'),
 ('6ufogbdqub9uthuhfvcpllvvv1', 1, 1, 1426192299, 1426192302, 864000, NULL, 'Zend_Auth|a:3:{s:7:"timeout";i:1426194698;s:10:"requestUri";s:13:"/admin/login/";s:7:"storage";O:8:"stdClass":11:{s:2:"id";s:1:"1";s:12:"acl_roles_id";s:1:"1";s:9:"user_name";s:7:"gamelena";s:11:"first_names";s:7:"Soporte";s:10:"last_names";s:7:"Zweicom";s:5:"email";s:20:"tecnicos@gamelena.com";s:8:"approved";s:1:"1";s:4:"foto";N;s:12:"must_refresh";s:1:"0";s:16:"sessionNamespace";s:17:"tangerine-testing";s:6:"groups";a:0:{}}}', '127.0.0.1', 'Opera/9.80 (X11; Linux x86_64) Presto/2.12.388 Version/12.16', '1'),
-('bs0kkmbel9jm34pd7qhb9lcf94', 1, 1, 1426282636, 1426283452, 864000, NULL, 'Zend_Auth|a:3:{s:7:"timeout";i:1426285329;s:10:"requestUri";s:89:"/crud-request?model=TestingTraficoModel&format=json&p=graphic-trafic.xml&start=0&count=25";s:7:"storage";O:8:"stdClass":11:{s:2:"id";s:1:"1";s:12:"acl_roles_id";s:1:"1";s:9:"user_name";s:7:"gamelena";s:11:"first_names";s:7:"Soporte";s:10:"last_names";s:7:"Zweicom";s:5:"email";s:20:"tecnicos@gamelena.com";s:8:"approved";s:1:"1";s:4:"foto";N;s:12:"must_refresh";s:1:"0";s:16:"sessionNamespace";s:17:"tangerine-testing";s:6:"groups";a:0:{}}}', '127.0.0.1', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0', '0'),
+('bs0kkmbel9jm34pd7qhb9lcf94', 1, 1, 1426282636, 1426283452, 864000, NULL, 'Zend_Auth|a:3:{s:7:"timeout";i:1426285329;s:10:"requestUri";s:89:"/crud-request?model=TestingTraficoModel&format=json&p=graphic-trafic.xml&start=0&count=25";s:7:"storage";O:8:"stdClass":11:{s:2:"id";s:1:"1";s:12:"acl_roles_id";s:1:"1";s:9:"user_name";s:7:"gamelena";s:11:"first_names";s:7:"Soporte";s:10:"last_names";s:7:"Zweicom";s:5:"email";s:20:"tecnicos@gamelena.com";s:8:"approved";s:1:"1";s:4:"foto";N;s:12:"must_refresh";s:1:"0";s:16:"sessionNamespace";s:17:"tangerine-testing";s:6:"groups";a:0:{}}}', '127.0.0.1', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0', '1'),
 ('bv29ntlst9131mh3pn10q96if0', 1, 1, 1426174538, 1426174576, 864000, NULL, 'Zend_Auth|a:3:{s:7:"timeout";i:1426176945;s:10:"requestUri";s:45:"/crud-request?model=SettingsModel&format=json";s:7:"storage";O:8:"stdClass":11:{s:2:"id";s:1:"1";s:12:"acl_roles_id";s:1:"1";s:9:"user_name";s:7:"gamelena";s:11:"first_names";s:7:"Soporte";s:10:"last_names";s:7:"Zweicom";s:5:"email";s:20:"tecnicos@gamelena.com";s:8:"approved";s:1:"1";s:4:"foto";N;s:12:"must_refresh";s:1:"0";s:16:"sessionNamespace";s:17:"tangerine-testing";s:6:"groups";a:0:{}}}', '127.0.0.1', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:36.0) Gecko/20100101 Firefox/36.0', '1'),
 ('e9fnhpu857tfgfurrudb7ia3c5', 1, 1, 1424692753, 1424693969, 864000, NULL, 'Zend_Auth|a:3:{s:7:"timeout";i:1424695480;s:10:"requestUri";s:46:"/admin/modules?dojo.preventCache=1424693080658";s:7:"storage";O:8:"stdClass":11:{s:2:"id";s:1:"1";s:12:"acl_roles_id";s:1:"1";s:9:"user_name";s:7:"gamelena";s:11:"first_names";s:7:"Soporte";s:10:"last_names";s:7:"Zweicom";s:5:"email";s:20:"tecnicos@gamelena.com";s:8:"approved";s:1:"1";s:4:"foto";N;s:12:"must_refresh";s:1:"0";s:16:"sessionNamespace";s:17:"ticketElectronico";s:6:"groups";a:0:{}}}', '127.0.0.1', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0', '1'),
 ('ghgrur3mstmel2mu2pd7dtfoh5', 1, 1, 1426187927, 1426254915, 864000, NULL, 'Zend_Auth|a:3:{s:7:"timeout";i:1426257313;s:10:"requestUri";s:12:"/admin/login";s:7:"storage";N;}', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.76 Safari/537.36 FirePHP/4Chrome', '1'),
 ('hkmdr8dv18doha9fvrqinl8ob1', 1, 1, 1421246333, 1421248736, 864000, NULL, 'Zend_Auth|a:3:{s:7:"timeout";i:1421251136;s:10:"requestUri";s:12:"/admin/login";s:7:"storage";N;}', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 FirePHP/4Chrome', '1'),
 ('iejaa8r3hqqhonla79ilsnvnd1', 1, 1, 1426184055, 1426184089, 864000, NULL, 'Zend_Auth|a:3:{s:7:"timeout";i:1426186459;s:10:"requestUri";s:46:"/admin/modules?dojo.preventCache=1426184058797";s:7:"storage";O:8:"stdClass":11:{s:2:"id";s:1:"1";s:12:"acl_roles_id";s:1:"1";s:9:"user_name";s:7:"gamelena";s:11:"first_names";s:7:"Soporte";s:10:"last_names";s:7:"Zweicom";s:5:"email";s:20:"tecnicos@gamelena.com";s:8:"approved";s:1:"1";s:4:"foto";N;s:12:"must_refresh";s:1:"0";s:16:"sessionNamespace";s:17:"tangerine-testing";s:6:"groups";a:0:{}}}', '127.0.0.1', 'Opera/9.80 (X11; Linux x86_64) Presto/2.12.388 Version/12.16', '1'),
-('jik5vsorhu14l076kp22qfk234', 1, 1, 1427221272, 1427223710, 864000, NULL, 'Zend_Auth|a:3:{s:7:"timeout";i:1427226110;s:10:"requestUri";s:12:"/admin/login";s:7:"storage";N;}', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36 FirePHP/4Chrome', '0'),
+('jik5vsorhu14l076kp22qfk234', 1, 1, 1427221272, 1427223710, 864000, NULL, 'Zend_Auth|a:3:{s:7:"timeout";i:1427226110;s:10:"requestUri";s:12:"/admin/login";s:7:"storage";N;}', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36 FirePHP/4Chrome', '1'),
 ('r4o39q1buo2b0nqudq56v8e0f1', 1, 1, 1424439370, 1424442681, 864000, NULL, 'Zend_Auth|a:3:{s:7:"timeout";i:1424445081;s:10:"requestUri";s:12:"/admin/login";s:7:"storage";N;}', '127.0.0.1', 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36', '1');
 
 -- --------------------------------------------------------
@@ -337,8 +342,8 @@ CREATE TABLE IF NOT EXISTS `acl_users` (
 --
 
 INSERT INTO `acl_users` (`id`, `acl_roles_id`, `user_name`, `password`, `first_names`, `last_names`, `email`, `approved`, `foto`, `must_refresh`) VALUES
-(1, 1, 'gamelena', '3a62dc577a0db23fb0b5c1c9e8046c05', 'Soporte', 'Zweicom', 'tecnicos@gamelena.com', '1', NULL, '0'),
-(2, 2, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'Administrador', 'Cliente', 'administrador@telefonicamoviles.com.pe', '1', NULL, '0'),
+(1, 1, 'gamelena', '31cb6a72f8f70612e27af0f59a9322ca', 'Soporte', 'Zweicom', 'tecnicos@gamelena.com', '1', NULL, '0'),
+(2, 2, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'Administrador', 'Cliente', '', '1', NULL, '0'),
 (3, 3, 'consultas', '83da1fbc8f1a993de3f31cec6d7bf5b2', 'Consultas', 'Cliente', '', '1', NULL, '0');
 
 -- --------------------------------------------------------
@@ -614,8 +619,8 @@ INSERT INTO `web_settings` (`id`, `list`, `value`, `type`, `description`, `ord`,
 ('query_log', '', '1', 'dijit-form-check-box', '', 1, 'Debug', '', '1', '', NULL, '', '', '', '', ''),
 ('titulo_adm', '', 'Tangerine Testing', 'dijit-form-validation-text-box', '', 1, 'Admin', '', '1', '', NULL, '', '', '', '', ''),
 ('transactions_log', '', '1', 'dijit-form-check-box', '', 1, 'Debug', '', '1', '', NULL, '', '', '', '', ''),
-('url_logo_oper', '', 'b07d49fdlogo-gamelena-big.png', 'dojox-form-uploader', '', 3, 'Admin', '', '1', '{ROOT_DIR}/public/upfiles/', '{BASE_URL}/upfiles/corporative/', '', '', '', 'formatImage', '&lt;thumb height="56" path="{ROOT_DIR}/public/upfiles/corporative/" /&gt;'),
-('url_logo_gamelena', '', 'b28576bblogo-gamelena-26x34.png', 'dojox-form-uploader', '', 3, 'Admin', '', '1', '{ROOT_DIR}/public/upfiles/', '{BASE_URL}/upfiles/corporative/', '', '', '', 'formatImage', '&lt;thumb height="18" path="{ROOT_DIR}/public/upfiles/corporative/" /&gt;\r\n');
+('url_logo_gamelena', '', 'b28576bblogo-gamelena-26x34.png', 'dojox-form-uploader', '', 3, 'Admin', '', '1', '{ROOT_DIR}/public/upfiles/', '{BASE_URL}/upfiles/corporative/', '', '', '', 'formatImage', '&lt;thumb height="18" path="{ROOT_DIR}/public/upfiles/corporative/" /&gt;\r\n'),
+('url_logo_oper', '', 'b07d49fdlogo-gamelena-big.png', 'dojox-form-uploader', '', 3, 'Admin', '', '1', '{ROOT_DIR}/public/upfiles/', '{BASE_URL}/upfiles/corporative/', '', '', '', 'formatImage', '&lt;thumb height="56" path="{ROOT_DIR}/public/upfiles/corporative/" /&gt;');
 
 -- --------------------------------------------------------
 
@@ -625,3 +630,7 @@ INSERT INTO `web_settings` (`id`, `list`, `value`, `type`, `description`, `ord`,
 DROP TABLE IF EXISTS `tables_logged`;
 
 CREATE ALGORITHM=UNDEFINED DEFINER=`tangerine_user`@`localhost` SQL SECURITY DEFINER VIEW `tables_logged` AS select distinct `log_book`.`table` AS `id`,`log_book`.`table` AS `title` from `log_book` order by `log_book`.`table`;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

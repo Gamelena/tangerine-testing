@@ -91,15 +91,16 @@
 	</target>
 	
 	<target name="database" description="Create Database and privileges">
-		<exec executable="${mysql}" input="${basedir}/db/tangerine.sql"
-			failonerror="true">
-			<arg value="--user=${db.username}" />
-			<arg value="--password=${db.password}" />
-		</exec>
 		<exec executable="${mysql}" input="${basedir}/db/privileges.sql"
 			failonerror="true">
 			<arg value="--user=${db.username}" />
 			<arg value="--password=${db.password}" />
+		</exec>
+		<exec executable="${mysql}" input="${basedir}/db/tangerine.sql"
+			failonerror="true">
+			<arg value="--user=${db.username}" />
+			<arg value="--password=${db.password}" />
+			<arg value="--database=tangerine_testing" />
 		</exec>
 	</target>
 
