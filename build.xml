@@ -38,7 +38,7 @@
 		depends="prepare,static-analysis-parallel,phpunit,phpdox,-check-failure"
 		description="Performs static analysis (executing the tools in parallel), runs the tests, and generates project documentation" />
 
-	<target name="quick-build" depends="static-analysis,phpunit,phpdox,-check-failure"
+	<target name="quick-build" depends="prepare,database,composer,phpunit,-check-failure"
 		description="Performs a lint check and runs the tests (without generating code coverage reports)" />
 
 	<target name="static-analysis"
